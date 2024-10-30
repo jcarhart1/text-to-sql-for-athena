@@ -16,6 +16,26 @@ class LanguageModel():
                 "top_k": 20,
                 "top_p": 1,
                 "stop_sequences": ["\n\nHuman:"],
+
+            #### "max_tokens_to_sample": 3000, (Commented Out)
+            #Purpose: Would limit the maximum number of tokens (words or word pieces) the model can generate to 3000.
+            #Note: Commented out with ###, so it's inactive.
+
+            #"temperature": 0,
+            #Purpose: Controls the randomness of the output.
+            #Explanation: A value of 0 makes the output deterministic (less random).
+
+            #"top_k": 20,
+            #Purpose: Limits the number of highest-probability vocabulary tokens to consider.
+            #Explanation: The model chooses the next word from the top 20 most probable words.
+
+            #"top_p": 1,
+            #Purpose: Sets nucleus sampling parameter.
+            #Explanation: Includes all tokens (since 1 means 100% of the probability mass).
+
+            #"stop_sequences": ["\n\nHuman:"],
+            #Purpose: Defines sequences at which the model should stop generating text.
+            #Explanation: If the model outputs \n\nHuman:, it will stop further text generation.
             }
         print("bedrockllm")
         #self.llm = BedrockLLM(
